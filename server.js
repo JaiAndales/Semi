@@ -1,11 +1,12 @@
 import express from "express";
 import dotenv from "dotenv";
+
+dotenv.config();
 import cors from "cors";
 
 import authRoutes from "./routes/authRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
 
-dotenv.config();
 
 const app = express();
 
